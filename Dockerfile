@@ -16,7 +16,7 @@ WORKDIR /app
 COPY --from=build /app/publish .
 
 # Railway dynamic port
-ENV ASPNETCORE_URLS=http://+:8080
-EXPOSE 8080
+ENV ASPNETCORE_URLS=http://+:5011
+EXPOSE 5011
 
 ENTRYPOINT ["dotnet", "Dashboard-app.dll"]
